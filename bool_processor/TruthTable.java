@@ -16,8 +16,6 @@ public class TruthTable {
 		BoolMethods.test(testPrep(statment));
 		this.statment=statment;
 		varibleNum=countDifVar(statment);
-		//
-		//
 		table = new boolean[(int)Math.pow(2, varibleNum)][varibleNum];
 		inputGen();
 		answers();
@@ -146,12 +144,7 @@ public class TruthTable {
 		return newS;
 	}
 	public static void main(String[] args) {
-		TruthTable a = new TruthTable("(([a]&[b])>[c])=[d]");
-		String s= a.toString();
-		s=replaceAll(s, "true", " 1 ");
-		s=replaceAll(s, "false", " 0 ");
-	
-		System.out.println(s);
+		
 	}
 
 }

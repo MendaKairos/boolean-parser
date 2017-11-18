@@ -5,7 +5,6 @@ public class BoolMethods {
 	private final static char OPERATIONS[]= {'-','&','|','>','=','^'};
 	
 	private BoolMethods() {
-		// TODO Auto-generated constructor stub
 	}
 	
 	
@@ -50,10 +49,9 @@ public class BoolMethods {
 		return s;
 	}
 	
-	//()()(())
+	
 	private static String getBaseCase(String s)
 	{
-		//System.out.println(s);
 		boolean found=false;
 		
 		int open=0;
@@ -109,11 +107,9 @@ public class BoolMethods {
 		}
 		return s;
 	}
-	//true;
-	//false
+	
 	private static String baseCase(String s)
 	{
-		//String ns="";
 		for(int j=0;j<s.length();j++)
 		{
 			if(s.charAt(j)==OPERATIONS[0])
@@ -155,12 +151,5 @@ public class BoolMethods {
 	 */
 	
 	public static void main(String[] args) {
-		String a="true>false";
-		
-		//String b="((false&true)>true)=true";
-
-		
-		System.out.println(stringToBool(a));
-		//System.out.println(a.substring(j-4, j));
 	}
 }
